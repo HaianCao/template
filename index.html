@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles_navigation_bar.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script src="scripts.js"></script>
+    <script src="scripts_navigation_bar.js"></script>
     <title>Template</title>
 </head>
 <body>
@@ -26,32 +27,21 @@
     </div>
     <div id="dropdown">
         <div id="dropdown_content">
-            <a href="#home" onclick="navigate()">HOME</a>
-            <a href="#haiancao" onclick="navigate()">HAIANCAO</a>
-            <a href="#duyanhtr" onclick="navigate()">DUYANHTR</a>
-            <a href="#contact" onclick="navigate()">CONTACT</a>
-            <a href="#about" onclick="navigate()">ABOUT</a>
+            <a href="#home" onclick="menu()">HOME</a>
+            <a href="#haiancao" onclick="menu()">HAIANCAO</a>
+            <a href="#duyanhtr" onclick="menu()">DUYANHTR</a>
+            <a href="#contact" onclick="menu()">CONTACT</a>
+            <a href="#about" onclick="menu()">ABOUT</a>
         </div>
     </div>
-    <script>
-    function myFunction() {
-  var x = document.getElementById('dropdown');
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
-  }
-}
-    </script>
-    <!-- <div id="dropdown">
-        This is my DIV element.
-        </div> -->
     <div class="content">
         <div id="HaianCao"></div>
         <div id="DuyAnhTR"></div>
         <div id="HoangVu"></div>
     </div>
 
-    <div id="contact"></div>
+    <div id="contact">
+
+    </div>
 </body>
 </html>
