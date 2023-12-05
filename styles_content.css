@@ -1,0 +1,41 @@
+.content{
+    background-color: rgb(185, 185, 185);
+    width: auto;
+    text-align: center;
+}
+.cont{
+    background-color: white;
+    margin: auto;
+    width: 80%;
+}
+#cont_title{
+    position: relative;
+    top: 5%;
+    padding: 5%;
+}
+#contact{
+    height: 300px;
+}
+#contact img{
+    padding: 5%;
+}
+.row{
+    float: left;
+    width: 50%;
+    content: "";
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media only screen and (max-width: 600px){
+    .row{
+        float: left;
+        width: 100%;
+        content: "";
+    }
+    #contact{
+        height: 480px;
+    }
+}

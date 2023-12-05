@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles_navigation_bar.css" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles_content.css" />
+    <link rel="stylesheet" type="text/css" href="styles_about.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <script src="scripts_navigation_bar.js"></script>
     <title>Template</title>
 </head>
 <body>
     <!-- navigation bar -->
+    <div>
     <div class="nav_desktop">
         <ul class="nav_bar">
             <li class="nav" style="background-color: red;"><a href="#home">HOME</a></li>
@@ -20,6 +22,7 @@
             <li class="nav"><a href="#haiancao">HAIANCAO</a></li>
         </ul>
     </div>
+
     <div class="nav_mobile">
         <ul class="nav_bar">
             <li class="nav" style="background-color: red;"><a id="menu" onclick="menu()">MENU</a></li>
@@ -34,28 +37,51 @@
             <a href="#about" onclick="menu()">ABOUT</a>
         </div>
     </div>
-
+    <div id="home"></div>
     <div class="video">
         <center>
-            <video width="70%" autoplay muted loop>
+            <video autoplay muted loop>
                 <source src="/videos/jhin.mp4" type="video/mp4">
             </video>
         </center>
-        
     </div>
 
     <div class="content">
-        <div id="HaianCao"></div>
-        <div id="DuyAnhTR"></div>
-        <div id="HoangVu"></div>
-    </div>
+        <div class="cont" style="color: rgb(255, 196, 87); font-size: 1.5em ; padding: 4%; box-sizing: border-box;"><em><b>HALL OF GLORY</b></em></div>
+        <div class="cont" id="HaianCao">HaianCao</div>
+        <div class="cont" style="background-color: black; color: white;" id="DuyAnhTR">DuyAnhTR</div>
 
-    <div id="contact">
-
+        <div class="cont" id="contact">
+            <div class="cont_title" style="font-size: 30px; color: rgb(255, 220, 156); padding: 30px;"><b><em>CONTACT</em></b></div>
+            <div>
+                <div class="row"><img src="/images/hamic.png" style="width: 20%; min-width: 150px" alt=""></div>
+                <div class="form row">
+                    <form class="">
+                        <br >
+                            <label class="lab"><b>Name</b></label></br>
+                            <input type="text">
+                        </div>
+                        <div >
+                            <label class="lab"><b>Mail</b></label></br>
+                            <input type="text">
+                        </div>
+                        <div >
+                            <label class="lab"><b>Message</b></label></br>
+                            <textarea style="height: 45px; width: 165px; resize: vertical;" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="about">
-
+        <div class="about_content">
+            <a href="https://www.facebook.com/toantinhamic" target="_blank"><img style="width: 7%; min-width: 50px;" src="/images/hamic.png" alt=""></a>
+            <div><b>
+                Powered by <a class="hamic" href="https://www.facebook.com/toantinhamic" target="_blank">HAMIC</a> (group 3)
+            </b></div>
+        </div>
     </div>
 </body>
 </html>
