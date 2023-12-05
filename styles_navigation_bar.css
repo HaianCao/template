@@ -65,3 +65,9 @@ li a {
         display: block;
     }
 }
+
+.video {
+    background-color: black;
+    text-align: center;
+
+}
