@@ -10,7 +10,8 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <script src="./scripts_navigation_bar.js"></script>
     <script src="./scripts_contact.js"></script>
-    <title>Template</title>
+    <script src="./scripts_title.js"></script>
+    <title onload="changeTitle()">❤ HAMIC ❤</title>
 </head>
 <body>
     <!-- Navigation bar -->
@@ -44,6 +45,7 @@
     </div>
     
     <!-- Video marketing (only for desktop) -->
+    <div id="home"></div>
     <div id="home" class="video">
         <center>
             <video autoplay muted loop>
@@ -51,19 +53,18 @@
             </video>
         </center>
     </div>
-    <div id="haiancao"></div>
     <!-- Content -->
     <div class="content">
 
         <!-- Main title -->
-        <div class="cont" style="color: rgb(255, 196, 87); font-size: 1.5em ; padding: 5%; box-sizing: border-box;"><em><b>HALL OF GLORY</b></em></div>
+        <div class="cont" style="color: rgb(255, 196, 87); font-size: 5vw ; padding: 50px 5% 5% 5%; box-sizing: border-box;background-color: rgb(34, 34, 34);"><em><b>HALL OF GLORY</b></em></div>
         
         <!-- Cao Hai An information -->
-        <div class="cont rowInfo" id="duyanhtr">
+        <div class="cont rowInfo" id="haiancao" style="padding: 10% 4%;">
             <div class="columnInfoImg">
                 <img style="border-radius: 50%;" src="./images/haiancao.jpg" width="50%" alt="">
                 <div style="font-size: x-large;"><b>Cao Hai An</b></div>
-            </br>
+                </br>
             </div>
             <div class="columnInfoMes">
                 <div class="mes">
@@ -83,11 +84,37 @@
         </div>
 
         <!-- Tran Duy Anh information -->
-        <div class="cont" style="background-color: black; color: white;" id="haiancao">DuyAnhTR</div>
+        <div class="cont rowInfo" style="background-color: black; color: white; padding: 10% 4%;" id="duyanhtr">
+            <div class="columnInfoImg replace">
+                <img style="border-radius: 50%;" src="./images/duyanhtr.jpg" width="50%" alt="">
+                <div style="font-size: x-large;"><b>Tran Duy Anh</b></div>
+                </br>
+            </div>
+            <div class="columnInfoMes">
+                <div class="mes">
+                    <b>
+                    Em kog bjet noj j hon luc nay boj hamjc vua to chuc 
+                    sjh nhat lan thu 8 va em faj noj rag hamjc that su la
+                     mot noj rat gan ket, moj nguoj luon dah su qan tam cho
+                      nhau jog nhu la mot ja djh that su. Nhan tuoj moj em
+                       chuc hamjc se maj luon la mot to am cho cac ban dam
+                        me cog nge, toan hoc dog thoj cug se toa sag de kog
+                         chj tro thah cau lac bo so 1 hus ma con la mot cau
+                          lac bo co tjeg trog joj cntt, tren ca dat nuoc vjet
+                           nam va tren the joj.
+                    </b>
+                </div>
+            </div>
+            <div class="columnInfoImg now">
+                <img style="border-radius: 50%;" src="./images/duyanhtr.jpg" width="50%" alt="">
+                <div style="font-size: x-large;"><b>Tran Duy Anh</b></div>
+                </br>
+            </div>
+        </div>
 
         <!-- Contact field -->
         <div class="cont" id="contact">
-            <div class="cont_title" style="font-size: 30px; color: rgb(255, 220, 156); padding: 30px;"><b><em>CONTACT</em></b></div>
+            <div class="cont_title" style="font-size: 30px; color: rgb(255, 220, 156); padding: 50px;"><b><em>CONTACT</em></b></div>
             <div class="rowContact">
                 <div class="hamic_image columnContact">
                     <img src="./images/hamic.png" style="width: 60%; min-width: 150px;" alt="">

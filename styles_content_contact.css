@@ -1,5 +1,5 @@
 .content{
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(58, 58, 58);
     width: auto;
     text-align: center;
 }
@@ -8,17 +8,12 @@
     margin: auto;
     width: 80%;
 }
-#cont_title{
-    top: 5%;
-    padding: 0%;
-}
+
 #contact{
     height: auto;
     padding-bottom: 20px;
 }
-*{
-    box-sizing: border-box;
-}
+
 .columnContact {
     float: left;
     width: 50%;

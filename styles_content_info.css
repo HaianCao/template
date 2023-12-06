@@ -19,6 +19,9 @@
     text-align: left;
     font-size: 1.5vw;
 }
+.replace{
+    display: none;
+}
 
 @media only screen and (max-width: 1000px){
     .mes{
@@ -37,4 +40,6 @@
       .mes{
         font-size: 4.5vw;
       }
+    .replace{display: block;}
+    .now{display: none;}
 }
