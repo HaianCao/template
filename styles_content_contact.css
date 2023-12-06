@@ -19,11 +19,11 @@
 *{
     box-sizing: border-box;
 }
-.column_contact {
+.columnContact {
     float: left;
     width: 50%;
   }
-.row_contact::after {
+.rowContact::after {
     content: "";
     display: table;
     clear: both;
@@ -32,7 +32,7 @@
     font-size: large;
 }
 @media only screen and (max-width: 600px){
-    .column{
+    .columnContact{
         float: left;
         width: 100%;
     }

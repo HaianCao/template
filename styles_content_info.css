@@ -1,0 +1,40 @@
+.columnInfoImg {
+    float: left;
+    width: 40%;
+  }
+  .columnInfoMes {
+    float: left;
+    width: 60%;
+  }
+.rowInfo::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*{
+    box-sizing: border-box;
+}
+.mes{
+    padding: 0 15%; 
+    text-align: left;
+    font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 1000px){
+    .mes{
+      font-size: 2.25vw;
+    }
+}
+@media only screen and (max-width: 600px){
+    .columnInfoImg {
+        float: left;
+        width: 100%;
+      }
+      .columnInfoMes {
+        float: left;
+        width: 100%;
+      }
+      .mes{
+        font-size: 4.5vw;
+      }
+}
