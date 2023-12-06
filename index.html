@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="styles_content.css" />
     <link rel="stylesheet" type="text/css" href="styles_about.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script src="scripts_navigation_bar.js"></script>
+    <script src="scripts_navigation_bar.js"></script>\
+    <script src="scripts_contact.js"></script>
     <title>Template</title>
 </head>
 <body>
@@ -48,27 +49,29 @@
 
     <div class="content">
         <div class="cont" style="color: rgb(255, 196, 87); font-size: 1.5em ; padding: 4%; box-sizing: border-box;"><em><b>HALL OF GLORY</b></em></div>
-        <div class="cont" id="HaianCao">HaianCao</div>
-        <div class="cont" style="background-color: black; color: white;" id="DuyAnhTR">DuyAnhTR</div>
+        <div class="cont" id="haiancao">HaianCao</div>
+        <div class="cont" style="background-color: black; color: white;" id="duyanhtr">DuyAnhTR</div>
 
         <div class="cont" id="contact">
             <div class="cont_title" style="font-size: 30px; color: rgb(255, 220, 156); padding: 30px;"><b><em>CONTACT</em></b></div>
-            <div>
-                <div class="row"><img src="/images/hamic.png" style="width: 20%; min-width: 150px" alt=""></div>
-                <div class="form row">
-                    <form class="">
-                        <br >
+            <div class="row">
+                <div class="hamic_image column">
+                    <img src="/images/hamic.png" style="width: 60%; min-width: 150px;" alt="">
+                    <strong style="font-size: large; color: rgb(255, 35, 35);"></br>Contact to us</strong>
+                </div>
+                <div class="form column">
+                    <form class="form">
+                            </br>
                             <label class="lab"><b>Name</b></label></br>
-                            <input type="text">
-                        </div>
-                        <div >
+                            <input id="name" onblur="checkName()" style="height: 30px;" type="text">
+                            <div id="checkName"></div>
+                            </br></br>
                             <label class="lab"><b>Mail</b></label></br>
-                            <input type="text">
-                        </div>
-                        <div >
+                            <input id="mail" onblur="checkMail()" style="height: 30px;" type="text">
+                            <div id="checkMail"></div>
+                            </br></br>
                             <label class="lab"><b>Message</b></label></br>
-                            <textarea style="height: 45px; width: 165px; resize: vertical;" name="" id="" cols="30" rows="10"></textarea>
-                        </div>
+                            <textarea style="height: 60px; width: 170px; resize: vertical;" name="" id="" cols="30" rows="15"></textarea></br>
                     </form>
                 </div>
             </div>
