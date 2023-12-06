@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles_navigation_bar.css" />
-    <link rel="stylesheet" type="text/css" href="styles_content.css" />
-    <link rel="stylesheet" type="text/css" href="styles_about.css" />
+    <link rel="stylesheet" type="text/css" href="styles_navigation_bar.css">
+    <link rel="stylesheet" type="text/css" href="styles_content.css">
+    <link rel="stylesheet" type="text/css" href="styles_about.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script src="scripts_navigation_bar.js"></script>\
+    <script src="scripts_navigation_bar.js"></script>
     <script src="scripts_contact.js"></script>
     <title>Template</title>
 </head>
 <body>
-    <!-- navigation bar -->
-    <div>
+    <!-- Navigation bar -->
+
+    <!-- For desktop version -->
     <div class="nav_desktop">
         <ul class="nav_bar">
             <li class="nav" style="background-color: red;"><a href="#home">HOME</a></li>
@@ -24,11 +25,13 @@
         </ul>
     </div>
 
+    <!-- For mobile version -->
     <div class="nav_mobile">
         <ul class="nav_bar">
             <li class="nav" style="background-color: red;"><a id="menu" onclick="menu()">MENU</a></li>
         </ul>
     </div>
+
     <div id="dropdown">
         <div id="dropdown_content">
             <a href="#home" onclick="menu()">HOME</a>
@@ -38,8 +41,9 @@
             <a href="#about" onclick="menu()">ABOUT</a>
         </div>
     </div>
-    <div id="home"></div>
-    <div class="video">
+    
+    <!-- Video marketing (only for desktop) -->
+    <div id="home" class="video">
         <center>
             <video autoplay muted loop>
                 <source src="/videos/jhin.mp4" type="video/mp4">
@@ -47,11 +51,19 @@
         </center>
     </div>
 
+    <!-- Content -->
     <div class="content">
+
+        <!-- Main title -->
         <div class="cont" style="color: rgb(255, 196, 87); font-size: 1.5em ; padding: 4%; box-sizing: border-box;"><em><b>HALL OF GLORY</b></em></div>
+        
+        <!-- Cao Hai An information -->
         <div class="cont" id="haiancao">HaianCao</div>
+
+        <!-- Tran Duy Anh information -->
         <div class="cont" style="background-color: black; color: white;" id="duyanhtr">DuyAnhTR</div>
 
+        <!-- Contact field -->
         <div class="cont" id="contact">
             <div class="cont_title" style="font-size: 30px; color: rgb(255, 220, 156); padding: 30px;"><b><em>CONTACT</em></b></div>
             <div class="row">
@@ -78,6 +90,7 @@
         </div>
     </div>
 
+    <!-- Information about group 3 HAMIC -->
     <div id="about">
         <div class="about_content">
             <a href="https://www.facebook.com/toantinhamic" target="_blank"><img style="width: 7%; min-width: 50px;" src="/images/hamic.png" alt=""></a>
