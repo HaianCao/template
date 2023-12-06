@@ -7,6 +7,9 @@
     background-color: white;
     margin: auto;
     width: 80%;
+    letter-spacing: .05em;
+    text-shadow: 4px 4px 0px #800404, 7px 7px 0px rgba(0, 0, 0, 0.946);
+}
 }
 
 #contact{
