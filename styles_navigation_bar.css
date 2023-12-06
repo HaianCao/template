@@ -1,4 +1,7 @@
-body{margin: 0;}
+body{
+    margin: 0;
+    
+}
 .nav_desktop, .nav_mobile{
     position: sticky;
     top: 0;
