@@ -3,6 +3,7 @@
     width: auto;
     text-align: center;
 }
+
 .cont{
     background-color: white;
     margin: auto;
@@ -14,21 +15,64 @@
     padding-bottom: 20px;
 }
 
+.cont_title{
+    font-size: 5vw;
+    color: rgb(255, 205, 112);
+    margin-bottom: 30px;
+    font-family: fantasy;
+}
+
 .columnContact {
     float: left;
     width: 50%;
-  }
+}
+
 .rowContact::after {
     content: "";
     display: table;
     clear: both;
 }
+
 .lab{
     font-size: large;
 }
+
+.checkResult{
+    color: red;
+    font-size: large;
+    font-weight: 1000;
+}
+
+.fill, .form textarea{
+    border-radius: 20px;
+    border: solid 2px rgb(20, 255, 20);
+    width: 50%;
+}
+
+.form button:hover{
+    zoom: 1.25;
+    color: rgb(255, 217, 0);
+    background: rgb(0, 55, 255) !important;
+}
+
 @media only screen and (max-width: 600px){
     .columnContact{
         float: left;
         width: 100%;
+    }
+
+    .cont_title{
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .columnContact{
+        float: left;
+        width: 100%;
+    }
+
+    .fill, .form textarea{
+        width: 80%;
     }
 }

@@ -50,22 +50,18 @@
         <div id="home">
             <img class="image" src="./images/slider/aatrox1.jpg">
         </div>
-        <div>
-            <button onclick="add()"> add </button>
-        </div>
-        <div>
-            <button onclick="back()"> back </button>
-        </div>
-
+        <img class="arrow" style="right: 0; transform: rotate(90deg);" src="./images/arrow.png" alt="" onclick="add()">
+        <img class="arrow"  style="left: 0; transform: rotate(-90deg);" src="./images/arrow.png" alt="" onclick="back()">
     </div>
+    
     <!-- Content -->
     <div class="content">
 
         <!-- Main title -->
-        <div class="cont" style="color: rgb(255, 196, 87); font-size: 5vw ; padding: 50px 5% 5% 5%; box-sizing: border-box;background-color: rgb(34, 34, 34);"><em><b>HALL OF GLORY</b></em></div>
+        <div class="cont mainTitle"><em><b>HALL OF GLORY</b></em></div>
         
         <!-- Cao Hai An information -->
-        <div class="cont rowInfo" id="haiancao" style="padding: 10% 4%; background-image: url(./images/xayah.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="cont rowInfo backGro" id="haiancao" style="background-image: url(./images/xayah.png);">
             <div class="columnInfoImg">
                 <img style="border-radius: 50%;" src="./images/haiancao.jpg" width="50%" alt="">
                 <div style="font-size: x-large;"><b>Cao Hai An</b></div>
@@ -86,7 +82,7 @@
         </div>
 
         <!-- Tran Duy Anh information -->
-        <div class="cont rowInfo" style="background-color: black; color: white; padding: 10% 4%;background-image: url(./images/rakan.png); background-repeat: no-repeat; background-size: cover; background-position: center;" id="duyanhtr">
+        <div class="cont rowInfo backGro" style="background-color: black; color: white; background-image: url(./images/rakan.png);" id="duyanhtr">
             <div class="columnInfoImg replace">
                 <img style="border-radius: 50%;" src="./images/duyanhtr.jpg" width="50%" alt="">
                 <div style="font-size: x-large;"><b>Tran Duy Anh</b></div>
@@ -111,8 +107,8 @@
         </div>
 
         <!-- Contact field -->
-        <div class="cont" id="contact" style="background-image: url(./images/hamicBackground.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="cont_title" style="font-size: 30px; color: rgb(255, 205, 112); padding: 50px;"><b><em>CONTACT</em></b></div>
+        <div class="cont backGro" id="contact" style="background-image: url(./images/hamicBackground.png);">
+            <div class="cont_title"><b><em>CONTACT</em></b></div>
             <div class="rowContact">
                 <div class="hamic_image columnContact">
                     <img src="./images/hamic.png" style="width: 60%; min-width: 150px; border-radius: 25%;" alt="">
@@ -122,15 +118,17 @@
                     <form class="form">
                             </br>
                             <label class="lab"><b>Name</b></label></br>
-                            <input id="name" onblur="checkName()" style="height: 30px;" type="text">
-                            <div id="checkName"></div>
+                            <input class="fill" id="name" onblur="checkName()" style="height: 30px;" type="text">
+                            <div class="checkResult" id="checkName"></div>
                             </br></br>
                             <label class="lab"><b>Mail</b></label></br>
-                            <input id="mail" onblur="checkMail()" style="height: 30px;" type="text">
-                            <div id="checkMail"></div>
+                            <input class="fill" id="mail" onblur="checkMail()" style="height: 30px;" type="text">
+                            <div class="checkResult" id="checkMail"></div>
                             </br></br>
                             <label class="lab"><b>Message</b></label></br>
-                            <textarea style="height: 60px; width: 170px; resize: vertical;" name="" id="" cols="30" rows="15"></textarea></br>
+                            <textarea class="fill" style="height: 60px; resize: vertical; border-radius: 10px;" name="" id="" cols="30" rows="15"></textarea></br>
+                            </br>
+                            <button id="submit" style="font-family: fantasy; background-color: azure; border-radius: 50%; height: 50px; width: 120px; border: none; z-index: 2;">SUBMIT</button>
                     </form>
                 </div>
             </div>

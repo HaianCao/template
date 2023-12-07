@@ -1,21 +1,25 @@
 function checkName(){
-    var input = document.getElementById("name").value;
-    var regex = /^[\p{L} ,.'-]+$/u;
+    let input = document.getElementById("name").value;
+    let regex = /^[\p{L} ,.'-]+$/u;
     if(regex.test(input) | input === ""){
-        var output = document.getElementById("checkName").innerHTML = "";
+        document.getElementById("checkName").innerHTML = "";
+        document.getElementsByClassName("fill")[0].style.borderColor = "rgb(20, 255, 20)";
     }
     else{
-        var output = document.getElementById("checkName").innerHTML = "Invalid name";
+        document.getElementById("checkName").innerHTML = "Invalid name";
+        document.getElementsByClassName("fill")[0].style.borderColor = "red";
     }
 }
 
 function checkMail(){
-    var input = document.getElementById("mail").value;
-    var regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
+    let input = document.getElementById("mail").value;
+    let regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
     if(regex.test(input) | input === ""){
-        var output = document.getElementById("checkMail").innerHTML = "";
+        document.getElementById("checkMail").innerHTML = "";
+        document.getElementsByClassName("fill")[1].style.borderColor = "rgb(20, 255, 20)";
     }
     else{
-        var output = document.getElementById("checkMail").innerHTML = "Invalid mail";
+        document.getElementById("checkMail").innerHTML = "Invalid mail";
+        document.getElementsByClassName("fill")[1].style.borderColor = "red";
     }
 }

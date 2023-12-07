@@ -1,13 +1,17 @@
 body{
     margin: 0;
+    font-family: serif, sans-serif;
 }
+
 .nav_desktop, .nav_mobile{
     position: sticky;
     top: 0;
     background-color: black;
     z-index: 1;
 }
+
 .nav_mobile{display: none;}
+
 li a {
     display: block;
     color: white;
@@ -15,19 +19,19 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .nav_bar{
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
     width: 95%;
     position: sticky;
-
 }
+
 .nav{
-    
     float: right;
 }
+
 .nav:hover{
     background-color: red;
 }
@@ -42,6 +46,7 @@ li a {
     text-align: center;
     z-index: 1;
 }
+
 #dropdown_content{
     position: absolute;
     float: none;
@@ -51,26 +56,25 @@ li a {
     background-color: black;
     right: 0;
 }
+
 #dropdown_content a{
-    position: relative;
-    top: 0;
     color: white;
     text-decoration: none;
-    float: none;
     clear:both;
     display: block;
     content: "";
     padding: 10px 17px;
 }
+
 #dropdown_content a:focus{
     background-color: red;
 }
+
 #home_container{
     background-color: black;
     height: 60%;
     width: 100%;
     text-align: center;
-
 }
 
 .image {
@@ -78,12 +82,27 @@ li a {
     height: 50vw;
 }
 
+.arrow{
+    height: 50px; 
+    position: absolute; 
+    top: 25vw;
+    height: 4vw; 
+}
+
 @media only screen and (max-width: 600px) {
     .nav_desktop{
         display: none;
     }
+    
     .nav_mobile, .dropdown{
         display: block;
+    }
+
+    .arrow{
+        height: 50px; 
+        position: absolute; 
+        top: 35vw;
+        height: 4vw; 
     }
 }
 

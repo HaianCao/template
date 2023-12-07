@@ -1,24 +1,36 @@
 .columnInfoImg {
     float: left;
     width: 40%;
-  }
-  .columnInfoMes {
+}
+
+.columnInfoMes {
     float: left;
     width: 60%;
-  }
+}
+
 .rowInfo::after {
     content: "";
     display: table;
     clear: both;
 }
+
 *{
     box-sizing: border-box;
 }
+
+.backGro{
+    padding: 10% 4%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
 .mes{
     padding: 0 15%; 
     text-align: left;
     font-size: 1.5vw;
 }
+
 .replace{
     display: none;
 }
@@ -28,18 +40,23 @@
       font-size: 2.25vw;
     }
 }
+
 @media only screen and (max-width: 600px){
     .columnInfoImg {
         float: left;
         width: 100%;
-      }
-      .columnInfoMes {
+    }
+    
+    .columnInfoMes {
         float: left;
         width: 100%;
-      }
-      .mes{
+    }
+
+    .mes{
         font-size: 4.5vw;
-      }
+    }
+
     .replace{display: block;}
+
     .now{display: none;}
 }

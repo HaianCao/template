@@ -1,3 +1,12 @@
+.mainTitle{
+    color: rgb(255, 196, 87);
+    font-size: 5vw ; 
+    padding: 50px 5% 5% 5%; 
+    box-sizing: border-box;
+    background-color: rgb(34, 34, 34); 
+    font-family: fantasy;
+}
+
 #about{
     padding: 20px;
     text-align: center;
@@ -11,7 +20,20 @@
     text-decoration: underline;
     color: blue;
 }
+
 .hamic:hover{
     font-size: x-large;
     color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+    .mainTitle{
+        font-size: 7vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainTitle{
+        font-size: 9vw;
+    }
 }

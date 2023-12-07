@@ -1,18 +1,29 @@
-const a = ["aatrox1.jpg", "leesin1.jpg", "akali1.jpg", "rakan1.jpg", "xayah1.jpg"];
-var index = 0;
+const a = ["aatrox1.jpg", "leesin1.jpg", "akali1.jpg", "xayah1.jpg", "rakan1.jpg"];
+let index = 0;
 function slider() {
-  document.getElementById("home").innerHTML = `<img class=\"image\" src=\"./images/slider/${a[index % 4]}\">`
-  index++;
+    document.getElementById("home").innerHTML = `<img class=\"image\" src=\"./images/slider/${a[index]}\">`
 }
-setInterval(slider, 5000);
+let x = setInterval(() => {
+    ++index;
+    if(index == a.length){
+        index = 0;
+    }
+    slider();
+}, 4000);
 
 function add() {
-  clearInterval();
-  ++index;
-  slider();
+    clearInterval(x);
+    ++index;
+    if(index == a.length){
+        index = 0;
+    }
+    slider();
 }
 function back() {
-  clearInterval();
-  --index;
-  slider();
+    clearInterval(x);
+    --index;
+    if(index == -1){
+        index = a.length - 1;
+    }
+    slider();
 }
