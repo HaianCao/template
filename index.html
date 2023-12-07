@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./styles_about.css">
     <link rel="stylesheet" type="text/css" href="./styles_content_info.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <script src="./scripts_slider.js"></script>
     <script src="./scripts_navigation_bar.js"></script>
     <script src="./scripts_contact.js"></script>
     <script src="./scripts_title.js"></script>
@@ -45,13 +46,17 @@
     </div>
     
     <!-- Video marketing (only for desktop) -->
-    <div id="home"></div>
-    <div id="home" class="video">
-        <center>
-            <video autoplay muted loop>
-                <source src="./videos/jhin.mp4" type="video/mp4">
-            </video>
-        </center>
+    <div id="home_container">
+        <div id="home">
+            <img class="image" src="./images/slider/aatrox1.jpg">
+        </div>
+        <div>
+            <button onclick="add()"> add </button>
+        </div>
+        <div>
+            <button onclick="back()"> back </button>
+        </div>
+
     </div>
     <!-- Content -->
     <div class="content">
