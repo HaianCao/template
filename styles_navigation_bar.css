@@ -34,7 +34,7 @@ li a {
 }
 
 .nav:hover{
-    background-color: red;
+    background-color: rgb(255, 149, 0);
 }
 
 #dropdown{
@@ -69,7 +69,7 @@ li a {
 }
 
 #dropdown_content a:focus{
-    background-color: red;
+    background-color: rgb(255, 149, 0);
 }
 
 #home_container{
@@ -101,10 +101,7 @@ li a {
     }
 
     .arrow{
-        height: 50px; 
-        position: absolute; 
         top: 35vw;
-        height: 4vw; 
     }
 }
 
